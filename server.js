@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("Hello from the back-end!");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
 
